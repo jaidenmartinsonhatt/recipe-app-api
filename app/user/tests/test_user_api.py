@@ -14,7 +14,7 @@ CREATE_USER_URL = reverse('user:create')
 
 def create_user(**params):
     """Create and return a new user."""
-    return get_user_model().object.create_user(**params)
+    return get_user_model().objects.create_user(**params)
 
 
 # break down tests into authenticated requests on non-authenticated requests
